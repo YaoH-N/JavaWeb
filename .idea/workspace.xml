@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="servlet01:war exploded" />
-      <artifact name="servlet02:war exploded" />
-      <artifact name="servlet03:war exploded" />
-      <artifact name="servlet04:war exploded" />
-      <artifact name="servlet05:war exploded" />
-      <artifact name="servlet06:war exploded" />
-      <artifact name="servlet07:war exploded" />
-      <artifact name="servlet08:war exploded" />
+      <artifact name="oa:war exploded" />
+      <artifact name="servlet10:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa310172-6b15-4e7e-9a22-6d3c05517404" name="Changes" comment="" />
+    <list default="true" id="aa310172-6b15-4e7e-9a22-6d3c05517404" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/oa/web/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +28,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;YaoH-N&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/YaoH-N/JavaWeb.git&quot;,
+    &quot;accountId&quot;: &quot;d2464e79-2ade-4c47-892e-9f85c7aba04d&quot;
+  }
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -53,39 +64,45 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2twjmYy6nosMCanZyOOjncDNpq6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TomEE Server.TomEE 10.1.31.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.Tomcat 10.1.31.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Development/apache-tomcat-10.1.31/lib/servlet-api.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.35402298&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Test.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TomEE Server.TomEE 10.1.31.executor": "Run",
+    "Tomcat Server.Tomcat 10.1.31.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/Development/apache-tomcat-10.1.31/lib/servlet-api.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.35402298",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Development\project\Java_proj\javaweb\oa\web\WEB-INF\lib" />
       <recent name="E:\Development\project\Java_proj\javaweb\servlet07" />
       <recent name="E:\Development\project\Java_proj\javaweb\template\src\com\ityaohui\template2" />
       <recent name="E:\Development\project\Java_proj\javaweb\servlet01\web\WEB-INF\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Development\project\Java_proj\javaweb\oa\web" />
       <recent name="E:\Development\project\Java_proj\javaweb\servlet07\web" />
       <recent name="E:\Development\project\Java_proj\javaweb\servlet05\web" />
     </key>
@@ -108,44 +125,14 @@
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="servlet01:war exploded">
+        <artifact name="oa:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/web" />
+            <option name="CONTEXT_PATH" value="/oa" />
           </settings>
         </artifact>
-        <artifact name="servlet02:war exploded">
+        <artifact name="servlet10:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/lifecycle" />
-          </settings>
-        </artifact>
-        <artifact name="servlet03:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/config" />
-          </settings>
-        </artifact>
-        <artifact name="servlet04:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/context" />
-          </settings>
-        </artifact>
-        <artifact name="servlet05:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/servlet05" />
-          </settings>
-        </artifact>
-        <artifact name="servlet06:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/servlet06" />
-          </settings>
-        </artifact>
-        <artifact name="servlet07:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/servlet07" />
-          </settings>
-        </artifact>
-        <artifact name="servlet08:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/servlet08" />
+            <option name="CONTEXT_PATH" value="/servlet10" />
           </settings>
         </artifact>
       </deployment>
@@ -223,14 +210,8 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="servlet01:war exploded" />
-          <artifact name="servlet02:war exploded" />
-          <artifact name="servlet03:war exploded" />
-          <artifact name="servlet04:war exploded" />
-          <artifact name="servlet05:war exploded" />
-          <artifact name="servlet06:war exploded" />
-          <artifact name="servlet07:war exploded" />
-          <artifact name="servlet08:war exploded" />
+          <artifact name="oa:war exploded" />
+          <artifact name="servlet10:war exploded" />
         </option>
       </method>
     </configuration>
@@ -266,7 +247,13 @@
       <workItem from="1741573672249" duration="5545000" />
       <workItem from="1741698659091" duration="4412000" />
       <workItem from="1741745674429" duration="4849000" />
-      <workItem from="1741757841657" duration="5332000" />
+      <workItem from="1741757841657" duration="8108000" />
+      <workItem from="1741788255165" duration="18000" />
+      <workItem from="1741959176293" duration="4061000" />
+      <workItem from="1742029192073" duration="6362000" />
+      <workItem from="1742095772032" duration="13457000" />
+      <workItem from="1742135004959" duration="18000" />
+      <workItem from="1742637750113" duration="8763000" />
     </task>
     <servers />
   </component>
@@ -280,6 +267,11 @@
           <url>file://$PROJECT_DIR$/servlet02/src/com/ityaohui/javaweb/servlet/GenericServlet.java</url>
           <line>25</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/oa/src/com/ityaohui/oa/web/action/DeptModifyServlet.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
