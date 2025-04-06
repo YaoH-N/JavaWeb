@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="oa3:war exploded" />
-      <artifact name="servlet14:war exploded" />
+      <artifact name="bank-mvc-001:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa310172-6b15-4e7e-9a22-6d3c05517404" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/oa/src/com/ityaohui/oa/utils/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/oa/src/com/ityaohui/oa/utils/DBUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oa/web/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet10_war_exploded/WEB-INF/classes/com/ityaohui/javaweb/servlet/AServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/servlet10_war_exploded/WEB-INF/classes/com/ityaohui/javaweb/servlet/AServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oa/com/ityaohui/oa/utils/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oa/com/ityaohui/oa/utils/DBUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/servlet10/com/ityaohui/javaweb/servlet/AServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/servlet10/com/ityaohui/javaweb/servlet/AServlet.class" afterDir="false" />
-    </list>
+    <list default="true" id="aa310172-6b15-4e7e-9a22-6d3c05517404" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +80,7 @@
     "Tomcat Server.Tomcat 10.1.31.executor": "Debug",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Development/apache-tomcat-10.1.31/lib/servlet-api.jar",
+    "last_opened_file_path": "E:/Development/project/Java_proj/javaweb/mvc/bank-mvc-002/src/com/ityaohui/bank",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,11 +95,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Development\project\Java_proj\javaweb\mvc\bank-mvc-002\src\com\ityaohui\bank" />
+      <recent name="E:\Development\project\Java_proj\javaweb\mvc\bank-mvc-002\web\WEB-INF" />
+      <recent name="E:\Development\project\Java_proj\javaweb\mvc\bank-mvc-001\web\WEB-INF\lib" />
       <recent name="E:\Development\project\Java_proj\javaweb\oa3\web\WEB-INF\lib" />
       <recent name="E:\Development\project\Java_proj\javaweb\oa3\web" />
-      <recent name="E:\Development\project\Java_proj\javaweb\oa2\src" />
-      <recent name="E:\Development\project\Java_proj\javaweb\oa2\web" />
-      <recent name="E:\Development\project\Java_proj\javaweb\oa2\web\WEB-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Development\project\Java_proj\javaweb\oa3\web\old" />
@@ -124,14 +117,9 @@
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="servlet14:war exploded">
+        <artifact name="bank-mvc-001:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/servlet14" />
-          </settings>
-        </artifact>
-        <artifact name="oa3:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/oa" />
+            <option name="CONTEXT_PATH" value="/bank" />
           </settings>
         </artifact>
       </deployment>
@@ -209,8 +197,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="servlet14:war exploded" />
-          <artifact name="oa3:war exploded" />
+          <artifact name="bank-mvc-001:war exploded" />
         </option>
       </method>
     </configuration>
@@ -261,6 +248,7 @@
       <workItem from="1743820822165" duration="865000" />
       <workItem from="1743830568914" duration="8563000" />
       <workItem from="1743859567615" duration="3650000" />
+      <workItem from="1743930043715" duration="14859000" />
     </task>
     <servers />
   </component>
