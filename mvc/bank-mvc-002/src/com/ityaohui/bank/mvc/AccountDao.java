@@ -37,7 +37,7 @@ public class AccountDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            DBUtils.close(conn, ps, null);
+            DBUtils.close(null, ps, null);
         }
         return count;
     }
@@ -55,7 +55,7 @@ public class AccountDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            DBUtils.close(conn, ps, null);
+            DBUtils.close(null, ps, null);
         }
         return count;
     }
@@ -66,6 +66,7 @@ public class AccountDao {
         int count = 0;
         try {
             conn = DBUtils.getConnection();
+            System.out.println("update " + conn);
             String sql = "update t_act set balance = ?,actno = ? where id = ?";
             ps = conn.prepareStatement(sql);
             ps.setDouble(1, act.getBalance());
@@ -75,7 +76,7 @@ public class AccountDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            DBUtils.close(conn, ps, null);
+            DBUtils.close(null, ps, null);
         }
         return count;
     }
@@ -87,14 +88,16 @@ public class AccountDao {
         Account act = null;
         try {
             conn = DBUtils.getConnection();
+            System.out.println("selectByActno " + conn);
             String sql = "select id,actno,balance from t_act where actno = ?";
             ps = conn.prepareStatement(sql);
-            ps.setString(1, act.getActno());
+            ps.setString(1, actno);
             rs = ps.executeQuery();
             if (rs.next()) {
                 Long id = rs.getLong("id");
                 Double balance = rs.getDouble("balance");
                 // 封装
+                act = new Account();
                 act.setActno(actno);
                 act.setId(id);
                 act.setBalance(balance);
@@ -102,7 +105,7 @@ public class AccountDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            DBUtils.close(conn, ps, rs);
+            DBUtils.close(null, ps, rs);
         }
         return act;
     }
@@ -128,7 +131,7 @@ public class AccountDao {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            DBUtils.close(conn, ps, rs);
+            DBUtils.close(null, ps, rs);
         }
         return actList;
     }

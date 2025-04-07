@@ -1,5 +1,7 @@
 package com.ityaohui.bank.mvc;
 
+import com.ityaohui.bank.exceptions.AppException;
+import com.ityaohui.bank.exceptions.MoneyNotEnoughException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -21,6 +23,23 @@ import java.io.IOException;
 public class AccountServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String fromActno = request.getParameter("fromActno");
+        String toActno = request.getParameter("toActno");
+        Double money = Double.parseDouble(request.getParameter("money"));
+        // 调用业务方法处理业务 (Model)
+        AccountService accountService = new AccountService();
+        try {
+            accountService.transfer(fromActno, toActno, money);
+            // 执行到这里，说明成功了
+            // 展示处理结果
+            response.sendRedirect(request.getContextPath() + "/success.jsp");
+        } catch (MoneyNotEnoughException e) {
+            // 转账失败了,余额不足
+            response.sendRedirect(request.getContextPath() + "/moneynotenough.jsp");
+        } catch (Exception e) {
+            // 转账失败了
+            response.sendRedirect(request.getContextPath() + "/error.jsp");
+        }
 
     }
 }
